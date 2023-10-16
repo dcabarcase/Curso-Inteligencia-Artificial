@@ -1,0 +1,1336 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading">
+    <Prefix name="" IRI="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Presentado por:
+- Jesus Manuel Caballero Cartuistes T000061201
+- Daniel Cabarcas Estrada T00061137
+- Juan Carlos Burgos T00061071</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Acción"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bolsa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CuentaDeTrading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EstrategiaDeAnalisisFundamental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EstrategiaDeAnálisisTécnico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GananciasPorAcción"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indicador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndicadorFundamental"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndicadorTécnico"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MACD"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediaMóvil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mercado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercadoDeAcciones"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercadoDeBonos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercadoDeMateriasPrimas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MercadoForex"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orden"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrdenDeCompra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OrdenDeVenta"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RendimientoPorDividendo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StopLoss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TakeProfit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Trader"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraderIndividual"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TraderInstitucional"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrailingStop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ÍndiceDeFuerzaRelativa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RatioPrecio/Ganancias"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Aplica"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ContieneA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Ejecuta"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsAplicadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsEjecutadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsPropiedadDe"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EsUtilizadoPor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#EstáAsociadoA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#PerteneceA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Posee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Utiliza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#operaEnMercado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#utilizaEstrategia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cantidad_a_comprar"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cantidad_a_vender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Cantidad_en_Cartera"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Moneda_principal"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NivelDeRiesgo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_de_la_Bolsa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_del_Mercado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_del_indicador"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Nombre_del_trader"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#NumeroDeCuenta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Pares_de_divisas_disponibles"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#País"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precio_Derivados"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precio_acciones"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precio_bonos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Precio_orden"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_de_acciones_negociadas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_de_bonos_negociados"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_de_indicador"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Tipo_de_materias_primas_negociadas"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_GananciasPorAcción"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_MACD"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_MediaMóvil"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_RendimientoPorDividendo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_stop_loss"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_take_profit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_trailing_stop"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_ÍndiceDeFuerzaRelativa"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#apellidos"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cantidad"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#descripción"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#estado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaCreación"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaFin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#fechaInicio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#institución"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#nombre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#porcentaje"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#precio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#saldoInicial"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#símbolo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoCuenta"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#tipoDerivado"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Valor_de_RatioPrecio/Ganancias"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bolsa_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Cuenta_de_Trading_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Estrategia_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Indicardor_Fundamental_Ganancias_por_Accion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mercado_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orden"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Trader_1"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Acción"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EstrategiaDeAnalisisFundamental"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EstrategiaDeAnálisisTécnico"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GananciasPorAcción"/>
+        <Class IRI="#IndicadorFundamental"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GestiónDeRiesgos"/>
+        <Class IRI="#Indicador"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndicadorFundamental"/>
+        <Class IRI="#Indicador"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndicadorTécnico"/>
+        <Class IRI="#Indicador"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MACD"/>
+        <Class IRI="#IndicadorTécnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediaMóvil"/>
+        <Class IRI="#IndicadorTécnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercadoDeAcciones"/>
+        <Class IRI="#Mercado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercadoDeBonos"/>
+        <Class IRI="#Mercado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercadoDeMateriasPrimas"/>
+        <Class IRI="#Mercado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MercadoForex"/>
+        <Class IRI="#Mercado"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrdenDeCompra"/>
+        <Class IRI="#Orden"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OrdenDeVenta"/>
+        <Class IRI="#Orden"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RendimientoPorDividendo"/>
+        <Class IRI="#IndicadorFundamental"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StopLoss"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TakeProfit"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraderIndividual"/>
+        <Class IRI="#Trader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TraderInstitucional"/>
+        <Class IRI="#Trader"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrailingStop"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ÍndiceDeFuerzaRelativa"/>
+        <Class IRI="#IndicadorTécnico"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RatioPrecio/Ganancias"/>
+        <Class IRI="#IndicadorFundamental"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Bolsa"/>
+        <NamedIndividual IRI="#Bolsa_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CuentaDeTrading"/>
+        <NamedIndividual IRI="#Cuenta_de_Trading_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#EstrategiaDeAnalisisFundamental"/>
+        <NamedIndividual IRI="#Estrategia_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GananciasPorAcción"/>
+        <NamedIndividual IRI="#Indicardor_Fundamental_Ganancias_por_Accion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Acción"/>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MercadoDeMateriasPrimas"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#OrdenDeCompra"/>
+        <NamedIndividual IRI="#Orden"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TraderIndividual"/>
+        <NamedIndividual IRI="#Trader_1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#PerteneceA"/>
+        <NamedIndividual IRI="#Bolsa_1"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Utiliza"/>
+        <NamedIndividual IRI="#Estrategia_1"/>
+        <NamedIndividual IRI="#Indicardor_Fundamental_Ganancias_por_Accion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EstáAsociadoA"/>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+        <NamedIndividual IRI="#Cuenta_de_Trading_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#EsEjecutadoPor"/>
+        <NamedIndividual IRI="#Orden"/>
+        <NamedIndividual IRI="#Trader_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#Ejecuta"/>
+        <NamedIndividual IRI="#Trader_1"/>
+        <NamedIndividual IRI="#Orden"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#operaEnMercado"/>
+        <NamedIndividual IRI="#Trader_1"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#utilizaEstrategia"/>
+        <NamedIndividual IRI="#Trader_1"/>
+        <NamedIndividual IRI="#Estrategia_1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_de_la_Bolsa"/>
+        <NamedIndividual IRI="#Bolsa_1"/>
+        <Literal>Bolsa de Valores de New York</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#NumeroDeCuenta"/>
+        <NamedIndividual IRI="#Cuenta_de_Trading_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">155511220010</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#saldoInicial"/>
+        <NamedIndividual IRI="#Cuenta_de_Trading_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">50542</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_del_indicador"/>
+        <NamedIndividual IRI="#Indicardor_Fundamental_Ganancias_por_Accion"/>
+        <Literal>Ganancia por Accion</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Valor_de_GananciasPorAcción"/>
+        <NamedIndividual IRI="#Indicardor_Fundamental_Ganancias_por_Accion"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15350</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cantidad_en_Cartera"/>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">38000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Precio_acciones"/>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">154</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#símbolo"/>
+        <NamedIndividual IRI="#Instrumento_Financiero_1"/>
+        <Literal>USD</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Moneda_principal"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+        <Literal>Dolar</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_del_Mercado"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+        <Literal>Mercado de Capital - Acciones</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#País"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+        <Literal>Estados Unidos</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Tipo_de_materias_primas_negociadas"/>
+        <NamedIndividual IRI="#Mercado_1"/>
+        <Literal>Oro</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Cantidad_a_comprar"/>
+        <NamedIndividual IRI="#Orden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Precio_orden"/>
+        <NamedIndividual IRI="#Orden"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Nombre_del_trader"/>
+        <NamedIndividual IRI="#Trader_1"/>
+        <Literal>Steve</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#apellidos"/>
+        <NamedIndividual IRI="#Trader_1"/>
+        <Literal>Jobs</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Aplica"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#Ejecuta"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#EsAplicadoPor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#operaEnMercado"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#utilizaEstrategia"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Aplica"/>
+        <ObjectProperty IRI="#Aplica"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ContieneA"/>
+        <ObjectProperty IRI="#PerteneceA"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#Ejecuta"/>
+        <ObjectProperty IRI="#EsEjecutadoPor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#EsPropiedadDe"/>
+        <ObjectProperty IRI="#Posee"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#EsUtilizadoPor"/>
+        <ObjectProperty IRI="#Utiliza"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Aplica"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ContieneA"/>
+        <Class IRI="#Mercado"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Ejecuta"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsAplicadoPor"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsEjecutadoPor"/>
+        <Class IRI="#Orden"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsPropiedadDe"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EsUtilizadoPor"/>
+        <Class IRI="#Indicador"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#EstáAsociadoA"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#PerteneceA"/>
+        <Class IRI="#Bolsa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Posee"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Utiliza"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#operaEnMercado"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#utilizaEstrategia"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Aplica"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ContieneA"/>
+        <Class IRI="#Bolsa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Ejecuta"/>
+        <Class IRI="#Orden"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsAplicadoPor"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsEjecutadoPor"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsPropiedadDe"/>
+        <Class IRI="#Trader"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EsUtilizadoPor"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#EstáAsociadoA"/>
+        <Class IRI="#CuentaDeTrading"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#PerteneceA"/>
+        <Class IRI="#Mercado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Posee"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Utiliza"/>
+        <Class IRI="#Indicador"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#operaEnMercado"/>
+        <Class IRI="#Mercado"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#utilizaEstrategia"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Cantidad_a_comprar"/>
+        <DataProperty IRI="#cantidad"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Cantidad_a_vender"/>
+        <DataProperty IRI="#cantidad"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Cantidad_en_Cartera"/>
+        <DataProperty IRI="#cantidad"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Nombre_de_la_Bolsa"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Nombre_del_Mercado"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Nombre_del_indicador"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Nombre_del_trader"/>
+        <DataProperty IRI="#nombre"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Pares_de_divisas_disponibles"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Precio_Derivados"/>
+        <DataProperty IRI="#precio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Precio_acciones"/>
+        <DataProperty IRI="#precio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Precio_bonos"/>
+        <DataProperty IRI="#precio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Precio_orden"/>
+        <DataProperty IRI="#precio"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Tipo_de_acciones_negociadas"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Tipo_de_bonos_negociados"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Tipo_de_indicador"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Tipo_de_materias_primas_negociadas"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_GananciasPorAcción"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_MACD"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_MediaMóvil"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_RendimientoPorDividendo"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_stop_loss"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_take_profit"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_trailing_stop"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_ÍndiceDeFuerzaRelativa"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#apellidos"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cantidad"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#descripción"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#estado"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaCreación"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaFin"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#fechaInicio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#institución"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#nombre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#porcentaje"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#precio"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#saldoInicial"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#símbolo"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipoCuenta"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#tipoDerivado"/>
+        <DataProperty IRI="#Tipo"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Valor_de_RatioPrecio/Ganancias"/>
+        <DataProperty IRI="#Valor"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#NumeroDeCuenta"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#apellidos"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#nombre"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cantidad_a_comprar"/>
+        <Class IRI="#OrdenDeCompra"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cantidad_a_vender"/>
+        <Class IRI="#OrdenDeVenta"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Cantidad_en_Cartera"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Moneda_principal"/>
+        <Class IRI="#Mercado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NivelDeRiesgo"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_de_la_Bolsa"/>
+        <Class IRI="#Bolsa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_del_Mercado"/>
+        <Class IRI="#Mercado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_del_indicador"/>
+        <Class IRI="#Indicador"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Nombre_del_trader"/>
+        <Class IRI="#Trader"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#NumeroDeCuenta"/>
+        <Class IRI="#CuentaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Pares_de_divisas_disponibles"/>
+        <Class IRI="#MercadoForex"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#País"/>
+        <Class IRI="#Mercado"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Precio_Derivados"/>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Precio_acciones"/>
+        <Class IRI="#Acción"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Precio_bonos"/>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Precio_orden"/>
+        <Class IRI="#Orden"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo_de_acciones_negociadas"/>
+        <Class IRI="#MercadoDeAcciones"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo_de_bonos_negociados"/>
+        <Class IRI="#MercadoDeBonos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo_de_indicador"/>
+        <Class IRI="#Indicador"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Tipo_de_materias_primas_negociadas"/>
+        <Class IRI="#MercadoDeMateriasPrimas"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_GananciasPorAcción"/>
+        <Class IRI="#GananciasPorAcción"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_MACD"/>
+        <Class IRI="#MACD"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_MediaMóvil"/>
+        <Class IRI="#MediaMóvil"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_RendimientoPorDividendo"/>
+        <Class IRI="#RendimientoPorDividendo"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_stop_loss"/>
+        <Class IRI="#StopLoss"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_take_profit"/>
+        <Class IRI="#TakeProfit"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_trailing_stop"/>
+        <Class IRI="#TrailingStop"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_ÍndiceDeFuerzaRelativa"/>
+        <Class IRI="#ÍndiceDeFuerzaRelativa"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#apellidos"/>
+        <Class IRI="#TraderIndividual"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripción"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#descripción"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#estado"/>
+        <Class IRI="#Orden"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaCreación"/>
+        <Class IRI="#Orden"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaFin"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#fechaInicio"/>
+        <Class IRI="#EstrategiaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#institución"/>
+        <Class IRI="#TraderInstitucional"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#porcentaje"/>
+        <Class IRI="#GestiónDeRiesgos"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#saldoInicial"/>
+        <Class IRI="#CuentaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#símbolo"/>
+        <Class IRI="#InstrumentoFinanciero"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoCuenta"/>
+        <Class IRI="#CuentaDeTrading"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#tipoDerivado"/>
+        <Class IRI="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Valor_de_RatioPrecio/Ganancias"/>
+        <Class IRI="#RatioPrecio/Ganancias"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Moneda_principal"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NivelDeRiesgo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#NumeroDeCuenta"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Pares_de_divisas_disponibles"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#País"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo_de_acciones_negociadas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo_de_bonos_negociados"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo_de_indicador"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Tipo_de_materias_primas_negociadas"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Valor"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Valor_de_stop_loss"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Valor_de_take_profit"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Valor_de_trailing_stop"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#apellidos"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#cantidad"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#descripción"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#estado"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaCreación"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaFin"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#fechaInicio"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#institución"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#nombre"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#porcentaje"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#precio"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#saldoInicial"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#símbolo"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoCuenta"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#tipoDerivado"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos</IRI>
+        <Literal>Un tipo de instrumento financiero que representa un préstamo a una entidad, generalmente gubernamental o corporativa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados</IRI>
+        <Literal>Instrumentos financieros cuyos valores dependen del valor de otro activo subyacente.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Acción</IRI>
+        <Literal>Un tipo de instrumento financiero que representa la propiedad parcial de una empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Bolsa</IRI>
+        <Literal>Una entidad o plataforma que facilita la compra y venta de instrumentos financieros, como acciones y bonos.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CuentaDeTrading</IRI>
+        <Literal>Una cuenta utilizada por un trader para llevar a cabo operaciones financieras en diferentes mercados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EstrategiaDeAnalisisFundamental</IRI>
+        <Literal>Un enfoque de análisis en el trading financiero que se basa en evaluar datos económicos, financieros y otras variables fundamentales de una empresa o activo. Busca determinar el valor intrínseco y las perspectivas futuras de un activo financiero.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EstrategiaDeAnálisisTécnico</IRI>
+        <Literal>Un enfoque de análisis en el trading financiero que se basa en el estudio de patrones gráficos, tendencias pasadas, volumen de operaciones y otros indicadores derivados de la actividad histórica del mercado y el precio de un activo. Busca predecir futuros movimientos de precios basados en el comportamiento pasado del mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EstrategiaDeTrading</IRI>
+        <Literal>Un plan o enfoque elaborado para realizar operaciones financieras y alcanzar ciertos objetivos en el mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GananciasPorAcción</IRI>
+        <Literal>Las ganancias netas de una empresa divididas por el número de acciones en circulación.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GestiónDeRiesgos</IRI>
+        <Literal>El proceso de identificar, evaluar y mitigar los riesgos asociados con las operaciones financieras.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Indicador</IRI>
+        <Literal>Una métrica o estadística derivada de datos de mercado utilizada para analizar tendencias y patrones.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndicadorFundamental</IRI>
+        <Literal>Un indicador que evalúa el rendimiento financiero de una empresa utilizando datos financieros y económicos clave.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndicadorTécnico</IRI>
+        <Literal>Un indicador derivado de datos de precios y volumen, utilizado para predecir movimientos futuros en el mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstrumentoFinanciero</IRI>
+        <Literal>Un contrato que representa un derecho de propiedad sobre un activo financiero, como una acción o un bono.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MACD</IRI>
+        <Literal>Convergencia y Divergencia del Promedio Móvil, un indicador técnico utilizado para seguir tendencias.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MediaMóvil</IRI>
+        <Literal>Un indicador que promedia los precios de un activo durante un período específico para suavizar las fluctuaciones.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mercado</IRI>
+        <Literal>Un lugar donde los compradores y vendedores se reúnen para intercambiar bienes o servicios.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MercadoDeAcciones</IRI>
+        <Literal>Un mercado donde se negocian acciones y otros valores representativos de la propiedad de una empresa.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MercadoDeBonos</IRI>
+        <Literal>Un mercado donde se negocian bonos y otros instrumentos de deuda.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MercadoDeMateriasPrimas</IRI>
+        <Literal>Un mercado donde se negocian materias primas como petróleo, oro, maíz, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MercadoForex</IRI>
+        <Literal>Un mercado donde se negocian divisas (monedas extranjeras).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Orden</IRI>
+        <Literal>Una instrucción para comprar o vender un activo financiero en un mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrdenDeCompra</IRI>
+        <Literal>Una orden para comprar un activo financiero en un mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OrdenDeVenta</IRI>
+        <Literal>Una orden para vender un activo financiero en un mercado.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RendimientoPorDividendo</IRI>
+        <Literal>El rendimiento generado por los dividendos de una acción en relación con su precio actual.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#StopLoss</IRI>
+        <Literal>Un punto predeterminado en el que se vende un activo para limitar las pérdidas en una operación.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TakeProfit</IRI>
+        <Literal>Un punto predeterminado en el que se vende un activo para asegurar ganancias en una operación.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Trader</IRI>
+        <Literal>Una persona o entidad que participa en operaciones financieras en los mercados.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TraderIndividual</IRI>
+        <Literal>Un trader que opera en los mercados por cuenta propia, no en nombre de una institución financiera.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TraderInstitucional</IRI>
+        <Literal>Un trader que opera en los mercados en nombre de una institución financiera, como un banco o una firma de inversión.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TrailingStop</IRI>
+        <Literal>Un mecanismo que ajusta automáticamente el nivel de stop loss a medida que el precio del activo aumenta.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ÍndiceDeFuerzaRelativa</IRI>
+        <Literal>Un indicador técnico que compara las ganancias recientes con las pérdidas recientes para evaluar la fuerza del precio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RatioPrecio/Ganancias</IRI>
+        <Literal>La relación entre el precio actual de una acción y las ganancias por acción de la empresa.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
