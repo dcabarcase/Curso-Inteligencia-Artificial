@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading/"
+     xml:base="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:FinancialMarketTrading="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading">
+        <rdfs:comment>Presentado por:
+- Jesus Manuel Caballero Cartuistes T000061201
+- Daniel Cabarcas Estrada T00061137
+- Juan Carlos Burgos T00061071</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Aplica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Aplica">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Aplica"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#ContieneA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#ContieneA">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#PerteneceA"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Ejecuta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Ejecuta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsEjecutadoPor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsAplicadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsAplicadoPor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsEjecutadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsEjecutadoPor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsPropiedadDe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsPropiedadDe">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Posee"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsUtilizadoPor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EsUtilizadoPor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Utiliza"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstáAsociadoA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstáAsociadoA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#PerteneceA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#PerteneceA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Posee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Posee">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Utiliza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Utiliza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#operaEnMercado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#operaEnMercado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#utilizaEstrategia -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#utilizaEstrategia">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_a_comprar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_a_comprar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#cantidad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeCompra"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_a_vender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_a_vender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#cantidad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeVenta"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_en_Cartera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cantidad_en_Cartera">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#cantidad"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Moneda_principal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Moneda_principal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#NivelDeRiesgo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#NivelDeRiesgo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_de_la_Bolsa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_de_la_Bolsa">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_Mercado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_Mercado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_indicador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_indicador">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_trader -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Nombre_del_trader">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#NumeroDeCuenta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#NumeroDeCuenta">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Pares_de_divisas_disponibles -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Pares_de_divisas_disponibles">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoForex"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#País -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#País">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_Derivados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_Derivados">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_acciones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_acciones">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Acción"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_bonos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_bonos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_orden -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Precio_orden">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_acciones_negociadas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_acciones_negociadas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeAcciones"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_bonos_negociados -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_bonos_negociados">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeBonos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_indicador -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_indicador">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_materias_primas_negociadas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo_de_materias_primas_negociadas">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeMateriasPrimas"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_GananciasPorAcción -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_GananciasPorAcción">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GananciasPorAcción"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_MACD -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_MACD">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MACD"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_MediaMóvil -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_MediaMóvil">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MediaMóvil"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_RendimientoPorDividendo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_RendimientoPorDividendo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RendimientoPorDividendo"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_stop_loss -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_stop_loss">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#StopLoss"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_take_profit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_take_profit">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TakeProfit"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_trailing_stop -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_trailing_stop">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TrailingStop"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_ÍndiceDeFuerzaRelativa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_ÍndiceDeFuerzaRelativa">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#ÍndiceDeFuerzaRelativa"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#apellidos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#apellidos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderIndividual"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#cantidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#cantidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#descripción -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#descripción">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#estado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#estado">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaCreación -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaCreación">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaFin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaFin">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaInicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#fechaInicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#institución -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#institución">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderInstitucional"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#nombre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#porcentaje -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#porcentaje">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#precio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#saldoInicial -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#saldoInicial">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#símbolo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#símbolo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#tipoCuenta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#tipoCuenta">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#tipoDerivado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#tipoDerivado">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Tipo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_RatioPrecio/Ganancias -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor_de_RatioPrecio/Ganancias">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Valor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RatioPrecio/Ganancias"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Bonos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:comment>Un tipo de instrumento financiero que representa un préstamo a una entidad, generalmente gubernamental o corporativa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9/Trading#Derivados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:comment>Instrumentos financieros cuyos valores dependen del valor de otro activo subyacente.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Acción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Acción">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero"/>
+        <rdfs:comment>Un tipo de instrumento financiero que representa la propiedad parcial de una empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa">
+        <rdfs:comment>Una entidad o plataforma que facilita la compra y venta de instrumentos financieros, como acciones y bonos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading">
+        <rdfs:comment>Una cuenta utilizada por un trader para llevar a cabo operaciones financieras en diferentes mercados.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeAnalisisFundamental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeAnalisisFundamental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:comment>Un enfoque de análisis en el trading financiero que se basa en evaluar datos económicos, financieros y otras variables fundamentales de una empresa o activo. Busca determinar el valor intrínseco y las perspectivas futuras de un activo financiero.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeAnálisisTécnico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeAnálisisTécnico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading"/>
+        <rdfs:comment>Un enfoque de análisis en el trading financiero que se basa en el estudio de patrones gráficos, tendencias pasadas, volumen de operaciones y otros indicadores derivados de la actividad histórica del mercado y el precio de un activo. Busca predecir futuros movimientos de precios basados en el comportamiento pasado del mercado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeTrading">
+        <rdfs:comment>Un plan o enfoque elaborado para realizar operaciones financieras y alcanzar ciertos objetivos en el mercado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GananciasPorAcción -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GananciasPorAcción">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorFundamental"/>
+        <rdfs:comment>Las ganancias netas de una empresa divididas por el número de acciones en circulación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+        <rdfs:comment>El proceso de identificar, evaluar y mitigar los riesgos asociados con las operaciones financieras.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador">
+        <rdfs:comment>Una métrica o estadística derivada de datos de mercado utilizada para analizar tendencias y patrones.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorFundamental -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorFundamental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+        <rdfs:comment>Un indicador que evalúa el rendimiento financiero de una empresa utilizando datos financieros y económicos clave.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorTécnico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorTécnico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicador"/>
+        <rdfs:comment>Un indicador derivado de datos de precios y volumen, utilizado para predecir movimientos futuros en el mercado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#InstrumentoFinanciero">
+        <rdfs:comment>Un contrato que representa un derecho de propiedad sobre un activo financiero, como una acción o un bono.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MACD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MACD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorTécnico"/>
+        <rdfs:comment>Convergencia y Divergencia del Promedio Móvil, un indicador técnico utilizado para seguir tendencias.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MediaMóvil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MediaMóvil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorTécnico"/>
+        <rdfs:comment>Un indicador que promedia los precios de un activo durante un período específico para suavizar las fluctuaciones.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado">
+        <rdfs:comment>Un lugar donde los compradores y vendedores se reúnen para intercambiar bienes o servicios.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeAcciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeAcciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:comment>Un mercado donde se negocian acciones y otros valores representativos de la propiedad de una empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeBonos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeBonos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:comment>Un mercado donde se negocian bonos y otros instrumentos de deuda.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeMateriasPrimas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeMateriasPrimas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:comment>Un mercado donde se negocian materias primas como petróleo, oro, maíz, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoForex -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoForex">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado"/>
+        <rdfs:comment>Un mercado donde se negocian divisas (monedas extranjeras).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeCompra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeCompra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <rdfs:comment>Una orden para comprar un activo financiero en un mercado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeVenta -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeVenta">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <rdfs:comment>Una orden para vender un activo financiero en un mercado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RendimientoPorDividendo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RendimientoPorDividendo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorFundamental"/>
+        <rdfs:comment>El rendimiento generado por los dividendos de una acción en relación con su precio actual.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#StopLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#StopLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:comment>Un punto predeterminado en el que se vende un activo para limitar las pérdidas en una operación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TakeProfit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TakeProfit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:comment>Un punto predeterminado en el que se vende un activo para asegurar ganancias en una operación.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader">
+        <rdfs:comment>Una persona o entidad que participa en operaciones financieras en los mercados.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderIndividual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderIndividual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:comment>Un trader que opera en los mercados por cuenta propia, no en nombre de una institución financiera.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderInstitucional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderInstitucional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader"/>
+        <rdfs:comment>Un trader que opera en los mercados en nombre de una institución financiera, como un banco o una firma de inversión.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TrailingStop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TrailingStop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GestiónDeRiesgos"/>
+        <rdfs:comment>Un mecanismo que ajusta automáticamente el nivel de stop loss a medida que el precio del activo aumenta.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#ÍndiceDeFuerzaRelativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#ÍndiceDeFuerzaRelativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorTécnico"/>
+        <rdfs:comment>Un indicador técnico que compara las ganancias recientes con las pérdidas recientes para evaluar la fuerza del precio.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RatioPrecio/Ganancias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#RatioPrecio/Ganancias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#IndicadorFundamental"/>
+        <rdfs:comment>La relación entre el precio actual de una acción y las ganancias por acción de la empresa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Bolsa"/>
+        <FinancialMarketTrading:PerteneceA rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado_1"/>
+        <FinancialMarketTrading:Nombre_de_la_Bolsa>Bolsa de Valores de New York</FinancialMarketTrading:Nombre_de_la_Bolsa>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cuenta_de_Trading_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cuenta_de_Trading_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#CuentaDeTrading"/>
+        <FinancialMarketTrading:NumeroDeCuenta rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">155511220010</FinancialMarketTrading:NumeroDeCuenta>
+        <FinancialMarketTrading:saldoInicial rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">50542</FinancialMarketTrading:saldoInicial>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Estrategia_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Estrategia_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#EstrategiaDeAnalisisFundamental"/>
+        <FinancialMarketTrading:Utiliza rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicardor_Fundamental_Ganancias_por_Accion"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicardor_Fundamental_Ganancias_por_Accion -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Indicardor_Fundamental_Ganancias_por_Accion">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#GananciasPorAcción"/>
+        <FinancialMarketTrading:Nombre_del_indicador>Ganancia por Accion</FinancialMarketTrading:Nombre_del_indicador>
+        <FinancialMarketTrading:Valor_de_GananciasPorAcción rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15350</FinancialMarketTrading:Valor_de_GananciasPorAcción>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Instrumento_Financiero_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Instrumento_Financiero_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Acción"/>
+        <FinancialMarketTrading:EstáAsociadoA rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Cuenta_de_Trading_1"/>
+        <FinancialMarketTrading:Cantidad_en_Cartera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">38000</FinancialMarketTrading:Cantidad_en_Cartera>
+        <FinancialMarketTrading:Precio_acciones rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">154</FinancialMarketTrading:Precio_acciones>
+        <FinancialMarketTrading:símbolo>USD</FinancialMarketTrading:símbolo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#MercadoDeMateriasPrimas"/>
+        <FinancialMarketTrading:Moneda_principal>Dolar</FinancialMarketTrading:Moneda_principal>
+        <FinancialMarketTrading:Nombre_del_Mercado>Mercado de Capital - Acciones</FinancialMarketTrading:Nombre_del_Mercado>
+        <FinancialMarketTrading:País>Estados Unidos</FinancialMarketTrading:País>
+        <FinancialMarketTrading:Tipo_de_materias_primas_negociadas>Oro</FinancialMarketTrading:Tipo_de_materias_primas_negociadas>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#OrdenDeCompra"/>
+        <FinancialMarketTrading:EsEjecutadoPor rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader_1"/>
+        <FinancialMarketTrading:Cantidad_a_comprar rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</FinancialMarketTrading:Cantidad_a_comprar>
+        <FinancialMarketTrading:Precio_orden rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15000</FinancialMarketTrading:Precio_orden>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Trader_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#TraderIndividual"/>
+        <FinancialMarketTrading:Ejecuta rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden"/>
+        <FinancialMarketTrading:operaEnMercado rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Mercado_1"/>
+        <FinancialMarketTrading:utilizaEstrategia rdf:resource="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Estrategia_1"/>
+        <FinancialMarketTrading:Nombre_del_trader>Steve</FinancialMarketTrading:Nombre_del_trader>
+        <FinancialMarketTrading:apellidos>Jobs</FinancialMarketTrading:apellidos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jesus/ontologies/2023/9FinancialMarketTrading#Orden">
+        <rdfs:comment>Una instrucción para comprar o vender un activo financiero en un mercado.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
