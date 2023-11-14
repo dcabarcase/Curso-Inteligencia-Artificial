@@ -1,2 +1,2 @@
 # Curso-Inteligencia-Artificial
-Desarrollo del còdigo propuesto en el workshop "Search" para el curso de Inteligencia Artificial
+Desarrollo de actividades para el curso de Inteligencia Artificial
